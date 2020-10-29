@@ -1,0 +1,5 @@
+zookeeper:
+  connectionString: 106.75.60.254:2181
+  nodePath: /zookeeper/node
+  masterNodePath: /zookeeper/masterNode
+
