@@ -4,7 +4,7 @@ import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 
 /**
- * 创建Curator Client
+ * 创建Zookeeper Client服务
  */
 public interface ClientCreateService {
     CuratorFramework getDefaultClient();

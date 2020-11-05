@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
 
+/**
+ * 系统启动后，TM向Zookeeper注册，同时触发选主流程
+ */
 @Service
 @Slf4j
 public class TmRegisterToZkCommandLineRunner implements CommandLineRunner {

@@ -3,6 +3,9 @@ package com.pingan.distributed.transaction.zookeeper;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.zookeeper.CreateMode;
 
+/**
+ * Zookeeper的CRUD操作接口
+ */
 public interface ZkCrudService {
     /**
      * 创建一个Zookeeper节点

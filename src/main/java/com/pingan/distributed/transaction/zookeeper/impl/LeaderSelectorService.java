@@ -41,6 +41,11 @@ public class LeaderSelectorService extends LeaderSelectorListenerAdapter impleme
         leaderSelector.close();
     }
 
+    /**
+     * Zookeeper选主成功回调
+     *
+     * @param client
+     */
     @Override
     public void takeLeadership(CuratorFramework client) {
         log.info("name={} has been leader {} time(s) before.", name, leaderCount.getAndIncrement());
